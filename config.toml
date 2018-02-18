@@ -1,0 +1,51 @@
+baseurl = "/./"
+publishDir = "./"
+title = "qenvio's blog"
+author = "qenvio"
+canonifyurls = true
+languagecode = "en"
+theme = "hugo-tanka"
+
+draft = false # if set to true, changes will not be published
+enableEmoji = true
+
+googleAnalytics = ""
+disqusShortname = ""
+disable_mathjax = false
+
+pygmentsstyle      = "vs"
+pygmentscodefences = true
+
+ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+
+# Custom CSS. Put here your custom CSS files. They are loaded after the theme CSS;
+# they have to be referred from static root. Example
+customCSS = ["css/my-style.css"]
+
+# Custom JS. Put here your custom JS files. They are loaded after the theme JS;
+# they have to be referred from static root. Example
+customJS = ["js/myjs.js"]
+
+[params]
+  sitename = "qenvio's blog"
+
+[[menu.main]]
+    name = "Home"
+    url = "https://qenvio.github.io"
+    weight = 1
+[[menu.main]]
+    name = "GitHub"
+    url = "https://github.com/qenvio"
+    weight = 2
+[[menu.main]]
+    name = "LinkedIn"
+    url = "https://www.linkedin.com/in/enrique-vidal-ocabo-01497764/"
+    weight = 3
+[[menu.main]]
+    name = "Twitter"
+    url = "https://twitter.com/qenvio"
+    weight = 4
+[[menu.main]]
+    name = "RSS"
+    url = "/index.xml"
+    weight = 5
