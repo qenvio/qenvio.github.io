@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interrogating genome structure</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Enrique Vidal @qenvio github.com/qenvio enrique.vidal@crg.eu" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="hola.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+class: inverse, center, middle
+
+# Interrogating genome structure
+
+# Reproducibility and biases
+
+## Münster, 12 July 2018
+
+&lt;/br&gt;
+
+### Enrique (Quique) Vidal&lt;/br&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt; enrique.vidal@crg.eu
+
+### &lt;i class="fa fa-twitter"&gt;&lt;/i&gt; @qenvio &lt;i class="fa fa-github"&gt;&lt;/i&gt; qenvio
+
+
+---
+
+
+.pull-left2[
+.center[
+.theframe[
+&lt;img src="images/miguel.JPG" width="80%" /&gt;
+]
+]
+]
+.pull-left2[
+.center[
+.theframe[
+&lt;img src="images/thomas.JPG" width="80%" /&gt;
+]
+]
+]
+
+.pull-right2[
+.center[
+.theframe[
+&lt;img src="images/guillaume.JPG" width="80%" /&gt;
+]
+]
+]
+.pull-right2[
+.center[
+.theframe[
+&lt;img src="images/marc.JPG" width="80%" /&gt;
+]
+]
+]
+
+--
+
+.center[
+.theframe[
+&lt;img src="images/4DGenome.jpg" width="80%" /&gt;
+]
+]
+
+
+---
+count: false
+
+# 4DGenome
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/M_Beato.jpg" width="90%" /&gt;
+]
+]
+.center[
+.theframe[
+&lt;img src="images/T_Graff.jpg" width="90%" /&gt;
+]
+]
+]
+
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/M_Marti.jpg" width="90%" /&gt;
+]
+]
+.center[
+.theframe[
+&lt;img src="images/G_Filion.jpg" width="90%" /&gt;
+]
+]
+]
+
+---
+class: inverse, center, middle
+count: false
+
+# Motivation
+
+---
+
+# Genome structure is not random
+
+.center[
+.theframe[
+&lt;img src="images/cells.png" width="55%" /&gt;
+]
+]
+
+---
+
+# Chromosome conformation capture
+
+**Dekker, J. et al. (2002)**&lt;/br&gt;
+*Capturing chromosome conformation*&lt;/br&gt;
+Science
+
+--
+.center[
+.theframe[
+&lt;img src="images/crosslink.jpg" width="90%" /&gt;
+]
+]
+
+--
+**Lieberman-Aiden, E. et al. (2009)**&lt;/br&gt;
+*Comprehensive mapping of long-range interactions reveals folding principles of
+the human genome*&lt;/br&gt;
+Science
+
+---
+
+# Hi-C
+
+.center[
+.theframe[
+&lt;img src="images/hic_3.png" width="70%" /&gt;
+]
+]
+
+
+---
+class: inverse, center, middle
+count: false
+
+# What can we get from Hi-C?
+
+
+---
+
+# Territories
+
+.center[
+.theframe[
+&lt;img src="images/hic_1.png" width="70%" /&gt;
+]
+]
+
+---
+
+# Compartments
+
+.center[
+.theframe[
+&lt;img src="images/hic_2.png" width="70%" /&gt;
+]
+]
+
+---
+
+# Domains (TADs)
+
+.center[
+.theframe[
+&lt;img src="images/hic_3.png" width="70%" /&gt;
+]
+]
+
+---
+
+# Loops
+
+.center[
+.theframe[
+&lt;img src="images/hic_4.png" width="70%" /&gt;
+]
+]
+
+---
+
+# In a nutshell
+
+.center[
+.theframe[
+&lt;img src="images/hic.png" width="70%" /&gt;
+]
+]
+
+---
+
+# Distance decay
+
+.center[
+.theframe[
+&lt;img src="images/hic_distance_decay.png" width="70%" /&gt;
+]
+]
+
+
+---
+
+# Papers
+
+.center[
+.theframe[
+&lt;img src="images/medline_trends.png" width="70%" /&gt;
+]
+]
+
+
+---
+count: false
+
+# Papers
+
+.small[
+
+.pull-left[
+**Lieberman-Aiden, E. et al. (2009)**&lt;/br&gt;
+*Comprehensive mapping of long-range interactions reveals folding principles of
+the human genome*&lt;/br&gt;
+Science
+
+**Yaffe, E. and Tanay, A. (2011)**&lt;/br&gt;
+*Probabilistic modeling of Hi-C contact maps eliminates systematic biases to
+characterize global chromosomal architecture*&lt;/br&gt;
+Nature genetics
+
+**Imakaev, M. et al. (2012)**&lt;/br&gt;
+*Iterative correction of Hi-C data reveals hallmarks of chromosome organization*&lt;/br&gt;
+Nature methods
+
+**Dixon, J. R. et al (2012)**&lt;/br&gt;
+*Topological Domains in Mammalian Genomes Identified by Analysis of Chromatin
+Interactions*&lt;/br&gt;
+Nature
+
+
+]
+
+.pull-right[
+
+
+**Nora, E. P. et al. (2012)**&lt;/br&gt;
+*Spatial partitioning of the regulatory landscape of the X-inactivation
+centre*&lt;/br&gt;
+Nature
+
+
+**Rao, S.S. et al. (2014)**&lt;/br&gt;
+*A 3D map of the human genome at kilobase resolution reveals principles of
+chromatin looping*&lt;/br&gt;
+Cell
+
+**Hug, B. H. (2017)**&lt;/br&gt;
+*Chromatin architecture emerges during zygotic genome activation independent of
+transcription*&lt;/br&gt;
+Cell
+
+**Stadhouders, R. and Vidal, E. et al (2018)**&lt;/br&gt;
+*Transcription factors orchestrate dynamic interplay between genome topology and
+gene regulation during cell reprogramming*&lt;/br&gt;
+Naure genetics
+
+]
+
+]
+
+---
+class: inverse, center, middle
+count: false
+
+# Challenge 1
+# Systematic biases
+
+---
+
+# Genomic features affect Hi-C
+
+.center[
+.theframe[
+&lt;img src="images/yaffe.png" width="70%" /&gt;
+]
+]
+
+.tiny[
+**Yaffe, E. and Tanay, A. (2011)**&lt;/br&gt;
+*Probabilistic modeling of Hi-C contact maps eliminates systematic biases to
+characterize global chromosomal architecture*&lt;/br&gt;
+Nature genetics
+]
+
+---
+
+# Illustrating biases
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/toy_signal.png" width="100%" /&gt;
+]
+]
+]
+
+--
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/toy_feature.png" width="100%" /&gt;
+]
+]
+]
+
+---
+count: false
+
+# Illustrating biases
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/toy_signal.png" width="100%" /&gt;
+]
+]
+]
+
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/toy_bias.png" width="100%" /&gt;
+]
+]
+]
+
+---
+count: false
+
+# Illustrating biases
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/toy_signal_and_bias.png" width="100%" /&gt;
+]
+]
+]
+
+--
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/hic_distance_decay.png" width="100%" /&gt;
+]
+]
+]
+
+---
+count: false
+
+# Illustrating biases
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/toy_signal_and_bias.png" width="100%" /&gt;
+]
+]
+]
+
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/toy_decay.png" width="100%" /&gt;
+]
+]
+]
+
+---
+count: false
+
+# Illustrating biases
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/toy_signal_and_bias_and_decay.png" width="100%" /&gt;
+]
+]
+]
+
+--
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/toy_simulated.png" width="100%" /&gt;
+]
+]
+]
+
+---
+count: false
+
+# Illustrating biases
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/toy_signal.png" width="100%" /&gt;
+]
+]
+]
+
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/toy_simulated.png" width="100%" /&gt;
+]
+]
+]
+
+
+
+---
+class: inverse, center, middle
+count: false
+
+# Challenge 2
+# Reproducibility
+
+---
+
+# Decay drives Hi-C matrix comparison
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/hic_distance_decay.png" width="90%" /&gt;
+]
+]
+]
+
+--
+.pull-right[
+- Correct by expected decay **O / E**
+
+- Compute by distance **SCC**
+
+.tiny[**Yang, T. et al. (2017)**&lt;/br&gt;
+*HiCRep: assessing the reproducibility of Hi-C data using a stratum-adjusted
+correlation coefficient*&lt;/br&gt;
+Genome research
+]
+
+- Spectral decomposition **Reproducibility score**
+
+.tiny[**Yan, K. K. et al. (2017)**&lt;/br&gt;
+*HiC-spector: a matrix library for spectral and reproducibility analysis of Hi-C
+contact maps*&lt;/br&gt;
+Bioinformatics
+]
+]
+
+
+---
+# Reproducibility
+
+.center[
+.theframe[
+&lt;img src="images/reproducibility.png" width="70%" /&gt;
+]
+]
+
+
+---
+class: inverse, center, middle
+count: false
+
+# Challenge 3
+# Aberrant karyotypes
+
+---
+# Cancer cell line: K562
+
+.center[
+.theframe[
+&lt;img src="images/k562.png" width="70%" /&gt;
+]
+]
+
+---
+
+count: false
+
+# Cancer cell line: T47D
+
+.center[
+.theframe[
+&lt;img src="images/t47d.png" width="70%" /&gt;
+]
+]
+
+---
+count: false
+
+# Cancer cell line: T47D
+
+.center[
+.theframe[
+&lt;img src="images/totals_T47D.png" width="70%" /&gt;
+]
+]
+
+---
+class: inverse, center, middle
+count: false
+
+# Previous approaches
+
+---
+
+.pull-left[
+
+# HiCNorm
+
+&lt;/br&gt;
+
+.center[
+
+Explicit model of biases
+
+Regression model
+
+All matrix entries
+
+]
+
+&lt;/br&gt;
+
+.tiny[
+**Hu, M. et al. (2012)**&lt;/br&gt;
+*HiCNorm: removing biases in Hi-C data via Poisson regression*&lt;/br&gt;
+Bioinformatics
+]
+
+.tiny[
+**Yaffe, E. and Tanay, A. (2011)**&lt;/br&gt;
+*Probabilistic modeling of Hi-C contact maps eliminates systematic biases to
+characterize global chromosomal architecture*&lt;/br&gt;
+Nature genetics
+]
+
+]
+
+--
+.pull-righ[
+
+# ICE
+
+&lt;/br&gt;
+
+.center[
+
+Implicit correction
+
+Matrix balancing
+
+Equal visibility
+
+]
+
+&lt;/br&gt;
+
+.tiny[
+**Imakaev, M. et al. (2012)**&lt;/br&gt;
+*Iterative correction of Hi-C data reveals hallmarks of chromosome organization*&lt;/br&gt;
+Nature methods
+
+]
+
+]
+
+---
+
+# In action
+
+.center[
+.theframe[
+&lt;img src="images/toy_previous.png" width="70%" /&gt;
+]
+]
+
+
+---
+
+.pull-left[
+
+# HiCNorm
+
+&lt;/br&gt;
+
+### &amp;#x2713; fewer artifacts
+
+### &amp;#x274C; very slow
+
+### &amp;#x274C; no high resolution
+
+
+]
+
+.pull-righ[
+
+# ICE
+
+&lt;/br&gt;
+
+### &amp;#x274C; more artifacts
+
+### &amp;#x2713; fast
+
+### &amp;#x2713; high resolution
+
+&lt;/br&gt;
+
+]
+
+--
+.center[
+
+### &amp;#x274C; aberrant karyotypes
+
+]
+
+
+---
+class: inverse
+
+# Wish list
+
+--
+### &amp;#9825; Suitable aberrant karyotypes
+
+--
+### &amp;#9825; As good as existing
+
+--
+### &amp;#9825; Not worse on normal karyotypes
+
+--
+### &amp;#9825; Fast
+
+--
+### &amp;#9825; Usable at high resolution
+
+
+---
+
+# 2D &amp;#8594; 1D
+
+--
+.center[
+.theframe[
+&lt;img src="images/hic_2.png" width="70%" /&gt;
+]
+]
+
+---
+
+# Totals vs. Genomic features
+
+.center[
+.theframe[
+&lt;img src="images/hic_totals.png" width="70%" /&gt;
+]
+]
+
+---
+count: false
+
+# Non-linear relationship
+
+
+.center[
+.theframe[
+&lt;img src="images/hic_totals_smooth.png" width="70%" /&gt;
+]
+]
+
+---
+
+# OneD model
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/hic_2.png" width="100%" /&gt;
+]
+]
+]
+
+.pull-righ[
+&lt;/br&gt;
+`$$t_i = \sum_{j}^{n}{x_{i,j}} \sim NB(\lambda_i, \theta)$$`
+`$$log\left(\lambda_i\right) \propto \sum_{k}{f_k(x_k)}$$`
+`$$\lambda_{i}' = \frac{\lambda_i}{\sum_i^n{\lambda_j}/n}$$`
+`$$\hat{x}_{i,j} = \frac{x_{i,j}}{\sqrt{\lambda_{i}'\lambda_{j}'}}$$`
+]
+
+---
+count: false
+
+# OneD model
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/hic_totals_smooth.png" width="100%" /&gt;
+]
+]
+]
+
+.pull-righ[
+&lt;/br&gt;
+`$$t_i = \sum_{j}^{n}{x_{i,j}} \sim NB(\lambda_i, \theta)$$`
+`$$log\left(\lambda_i\right) \propto \sum_{k}{f_k(x_k)}$$`
+`$$\lambda_{i}' = \frac{\lambda_i}{\sum_i^n{\lambda_j}/n}$$`
+`$$\hat{x}_{i,j} = \frac{x_{i,j}}{\sqrt{\lambda_{i}'\lambda_{j}'}}$$`
+]
+
+
+---
+count: false
+
+# OneD model
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/hic_2.png" width="100%" /&gt;
+]
+]
+]
+
+.pull-righ[
+&lt;/br&gt;
+`$$t_i = \sum_{j}^{n}{x_{i,j}} \sim NB(\lambda_i, \theta)$$`
+`$$log\left(\lambda_i\right) \propto \sum_{k}{f_k(x_k)}$$`
+`$$\lambda_{i}' = \frac{\lambda_i}{\sum_i^n{\lambda_j}/n}$$`
+`$$\hat{x}_{i,j} = \frac{x_{i,j}}{\sqrt{\lambda_{i}'\lambda_{j}'}}$$`
+]
+
+---
+
+# In action
+
+.center[
+.theframe[
+&lt;img src="images/toy_all.png" width="70%" /&gt;
+]
+]
+
+
+---
+class: inverse, center, middle
+count: false
+
+# OneD performance
+
+---
+
+# Benchmark strategy
+
+### Different methods
+
+Including doing nothing (raw)
+
+
+### Different protocols
+
+Restriction enzyme, in-situ / diluted, lab, etc ...
+
+
+### Different cell types
+
+*Spike-in*
+
+
+
+---
+
+# Pair-wise comparison
+
+.center[
+.theframe[
+&lt;img src="images/benchmark_values.png" width="70%" /&gt;
+]
+]
+
+---
+
+# ROC and AUC
+
+.center[
+.theframe[
+&lt;img src="images/benchmark_rocs_only2.png" width="70%" /&gt;
+]
+]
+
+---
+count: false
+
+# ROC and AUC
+
+.center[
+.theframe[
+&lt;img src="images/benchmark_rocs.png" width="70%" /&gt;
+]
+]
+
+---
+count: false
+
+# ROC and AUC
+
+.center[
+.theframe[
+&lt;img src="images/benchmark_rocs_bis.png" width="70%" /&gt;
+]
+]
+
+---
+class: inverse
+
+# Wish list
+
+### &amp;#9825; Suitable aberrant karyotypes &amp;#x2713;
+
+### &amp;#9825; ~~As good as~~ Better than existing &amp;#x2713;
+
+### &amp;#9825; Not worse on normal karyotypes
+
+### &amp;#9825; Fast
+
+### &amp;#9825; Usable at high resolution
+
+---
+
+# ROC and AUC (diploid)
+
+.center[
+.theframe[
+&lt;img src="images/benchmark_rocs_mm10.png" width="70%" /&gt;
+]
+]
+
+---
+class: inverse
+
+# Wish list
+
+### &amp;#9825; Suitable aberrant karyotypes &amp;#x2713;
+
+### &amp;#9825; Better than existing &amp;#x2713;
+
+### &amp;#9825; Not worse on normal karyotypes &amp;#x2713;
+
+### &amp;#9825; Fast
+
+### &amp;#9825; Usable at high resolution
+
+---
+
+# Speed
+
+.center[
+.theframe[
+&lt;img src="images/global_times.png" width="70%" /&gt;
+]
+]
+
+---
+class: inverse
+
+# Wish list
+
+### &amp;#9825; Suitable aberrant karyotypes &amp;#x2713;
+
+### &amp;#9825; Better than existing &amp;#x2713;
+
+### &amp;#9825; Not worse on normal karyotypes &amp;#x2713;
+
+### &amp;#9825; Fast  &amp;#x2713;
+
+### &amp;#9825; Usable at high resolution
+
+---
+
+# Resolution
+
+.center[
+.theframe[
+&lt;img src="images/reso_times.png" width="70%" /&gt;
+]
+]
+
+---
+class: inverse
+
+# Wish list
+
+### &amp;#9825; Suitable aberrant karyotypes &amp;#x2713;
+
+### &amp;#9825; Better than existing &amp;#x2713;
+
+### &amp;#9825; Not worse on normal karyotypes &amp;#x2713;
+
+### &amp;#9825; Fast &amp;#x2713;
+
+### &amp;#9825; Usable at high resolution &amp;#x2713;
+
+---
+
+# Resolution (with some tricks)
+
+--
+.pull-left[
+.center[
+.shadow[
+&lt;img src="images/times_bins.png" width="90%" /&gt;
+]
+]
+.center[.large[Less data, less time]]
+]
+
+--
+.pull-left[
+.center[
+.shadow[
+&lt;img src="images/incomplete_subset_bins.png" width="90%" /&gt;
+]
+]
+.center[.large[Less data, same performance]]
+]
+
+---
+class: inverse
+
+# Summary
+
+&lt;/br&gt;
+
+--
+### Hi-C can interrogate genome structure
+
+### Hi-C experiments have biases (including copy number)
+
+&lt;/br&gt;
+
+--
+### OneD removes biases increasing reproducibility 
+
+### OneD is fast and suitable at high resolutions
+
+---
+
+# OneD availability
+
+### R package
+
+https://github.com/qenvio/dryhic
+
+
+### Paper
+
+**Vidal, E. et al. (2018)**
+
+*OneD: increasing reproducibility of Hi-C samples
+with abnormal karyotypes*
+
+Nucleic acids research
+
+https://doi.org/10.1093/nar/gky064
+
+---
+class: inverse, center, middle
+
+# The inner life of TADs
+
+### Genome-wide enrichment of contacts between regions
+
+(i.e. promoters and enhancers)
+
+---
+
+# Types of bins inside a TAD
+
+.center[
+.shadow[
+&lt;img src="images/intratad_cartoon.png" width="60%" /&gt;
+]
+]
+
+---
+
+# Example: HCR and H3K4me3
+
+--
+.pull-left[
+.center[
+.shadow[
+&lt;img src="images/intratad_cartoon.png" width="80%" /&gt;
+]
+]
+]
+
+--
+.pull-right[
+.center[
+.shadow[
+&lt;img src="images/intratad_raw_onebatch.png" width="80%" /&gt;
+]
+]
+]
+
+&lt;/br&gt;
+
+.small[
+**Le Dily, F. and Vidal, E. et al. (2017)**&lt;/br&gt;
+*Hormone Control Regions mediate opposing steroid receptor-dependent genome
+organizations*&lt;/br&gt;
+bioRxiv&lt;/br&gt;
+https://doi.org/10.1101/233874
+]
+
+
+---
+
+# Summarizing via linear mixed model
+
+.pull-left[
+.center[
+.shadow[
+&lt;img src="images/intratad_raw_onebatch.png" width="80%" /&gt;
+]
+]
+]
+
+--
+.pull-right[
+.center[
+.shadow[
+&lt;img src="images/intratad_linearmodel_onebatch.png" width="80%" /&gt;
+]
+]
+`$$log2\left(\frac{O_{ijk}}{E_{ijk}}\right) \sim N(\mu_{ijk}, \sigma)$$`
+`$$\mu_{ijk}=\pi_i+\rho_j+\delta_{ij}+\tau_k$$`
+`$$\tau_{k} \sim N(\mu_{tad}, \sigma_{tad})$$`
+]
+
+---
+
+# Simple comparison
+
+.pull-left[
+.center[
+.shadow[
+&lt;img src="images/intratad_linearmodel_onebatch.png" width="80%" /&gt;
+]
+]
+]
+
+--
+.pull-right[
+.center[
+.shadow[
+&lt;img src="images/intratad_linearmodel_foldchange_onebatch.png" width="80%" /&gt;
+]
+]
+]
+
+---
+
+# More samples
+
+.center[
+.shadow[
+&lt;img src="images/intratad_linearmodel_foldchange_timepoints.png" width="60%" /&gt;
+]
+]
+
+---
+
+# Even more samples (replicates!)
+
+.center[
+.shadow[
+&lt;img src="images/intratad_linearmodel_foldchange_timepoints_replicates.png" width="60%" /&gt;
+]
+]
+
+---
+
+# Do we have batch effect?
+
+--
+.center[
+.shadow[
+&lt;img src="images/intratad_batch_pca_raw.png" width="60%" /&gt;
+]
+]
+
+
+---
+
+# Removing biases helps ...
+
+.center[
+.shadow[
+&lt;img src="images/intratad_batch_pca_bias.png" width="60%" /&gt;
+]
+]
+
+---
+
+# ... and removing batch effect is even better
+
+.center[
+.shadow[
+&lt;img src="images/intratad_batch_pca_batch.png" width="60%" /&gt;
+]
+]
+
+---
+
+# Total variance explained
+
+--
+.center[
+.shadow[
+&lt;img src="images/intratad_batch_pexp.png" width="60%" /&gt;
+]
+]
+
+---
+class: inverse
+
+# Grand summary
+
+&lt;/br&gt;
+
+--
+### Genome structure plays a role and can be measured
+
+--
+
+### Increasing production of Hi-C data
+
+--
+
+### Methodological challenges to analyze and integrate Hi-C data
+
+--
+
+&lt;/br&gt;
+.center[
+### OneD: &lt;i class="fa fa-github"&gt;&lt;/i&gt; qenvio/dryhic
+]
+
+
+---
+class: inverse, center, middle
+count: false
+
+---
+class: inverse, center, middle
+count: false
+
+# OneD extras
+
+---
+count: false
+
+# Incomplete designs
+
+.center[
+.shadow[
+&lt;img src="images/incomplete_designs.png" width="100%" /&gt;
+]
+]
+
+---
+count: false
+
+# Copy number estimation
+
+
+.center[
+.shadow[
+&lt;img src="images/copy_number.png" width="70%" /&gt;
+]
+]
+
+
+---
+count: false
+
+# Precision-Recall
+
+.center[
+.shadow[
+&lt;img src="images/precision_recall_aberrant_roc.png" width="100%" /&gt;
+]
+]
+
+---
+count: false
+
+# Precision-Recall
+
+.center[
+.shadow[
+&lt;img src="images/precision_recall_normal_roc.png" width="50%" /&gt;
+]
+]
+    </textarea>
+<script src="libs/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
