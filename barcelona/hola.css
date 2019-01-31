@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
+
+body { font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif; }
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+.remark-code, .remark-inline-code { font-family: 'Source Code Pro', 'Lucida Console', Monaco, monospace; }
+
+.title-slide .remark-slide-number {
+	display: none;
+}
+
+.theframe img {
+    border: 10px solid #fff;
+    border-bottom: 3x solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #111;
+    -moz-box-shadow: 3px 3px 3px #111;
+    -moz-border-radius: 5px;
+    box-shadow: 3px 3px 3px #111;
+    border-radius: 2px;  
+}
+
+.pull-left2 {
+  float: left;
+  width: 22%;
+}
+.pull-right2 {
+  float: right;
+  width: 22%;
+}
