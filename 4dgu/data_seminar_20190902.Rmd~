@@ -1,0 +1,653 @@
+---
+title: "4DGU"
+author: "Enrique Vidal<br/>@qenvio github.com/qenvio enrique.vidal@crg.eu"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output:
+  xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
+    css: ["default", "default-fonts", "hygge", "hola.css", "xaringan-themer.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      self_contained: true
+    seal: false
+---
+
+```{r xaringan-themer, include = FALSE}
+library("xaringanthemer")
+library("fontawesome")
+mono_accent(
+    base_color = "#143A5C"
+	)
+##solarized_light()
+```
+
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
+
+count: false
+class: inverse, center, middle
+
+</br>
+</br>
+</br>
+</br>
+
+# 4DGU
+
+</br>
+
+## Data seminar 02 - 09 - 2019
+
+</br>
+
+### Enrique Vidal</br><i class="fa fa-envelope"></i> enrique.vidal@crg.eu</br><i class="fa fa-twitter"></i> @qenvio <i class="fa fa-github"></i> qenvio
+
+---
+count: false
+class: inverse, center, middle
+
+# People
+
+---
+
+# 4DGenome
+
+.pull-left[
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/M_Beato.jpg")
+```
+]
+]
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/T_Graff.jpg")
+```
+]
+]
+]
+
+.pull-right[
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/M_Marti.jpg")
+```
+]
+]
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/G_Filion.jpg")
+```
+]
+]
+]
+
+---
+count: false
+class: inverse, center
+
+
+</br>
+
+</br>
+
+# 4DGenome Unit
+
+--
+
+</br>
+ 
+
+## It's about C technologies
+
+
+---
+
+# Chromosome conformation capture
+
+**Dekker, J. et al. (2002)**</br>
+*Capturing chromosome conformation*</br>
+Science
+
+.center[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/crosslink.jpg")
+```
+]
+
+
+**Lieberman-Aiden, E. et al. (2009)**</br>
+*Comprehensive mapping of long-range interactions reveals folding principles of
+the human genome*</br>
+Science
+
+
+---
+
+# Hi-C Matrix: Step by step
+
+.center[
+```{r, echo=FALSE, out.width="60%"}
+knitr::include_graphics("images/hic_animation_full.gif")
+```
+]
+
+---
+
+# Territories, compartments, domains, loops
+
+.center[
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/hic.png")
+```
+]
+
+
+---
+
+# Capture-C: Contact matrices
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/chic_1.png")
+```
+]
+
+---
+count: false
+
+# Capture-C: Contact matrices
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/chic_2.png")
+```
+]
+
+---
+
+# Capture-C: Contact profile
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/virtual_1.png")
+```
+]
+
+---
+count: false
+
+# Capture-C: Contact profile
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/virtual_2.png")
+```
+]
+
+
+---
+
+# 4C
+
+.center[
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/profile_domainogram.png")
+```
+]
+
+
+
+
+---
+count: false
+class: inverse, center, middle
+
+# Data production
+
+
+---
+count: false
+class: inverse, center, middle
+
+# Challenges and results
+
+
+
+
+---
+count: false
+class: inverse, center, middle
+
+# Open challenges
+
+---
+
+# Hi-C
+
+--
+
+## &emsp; Quality control
+
+--
+
+## &emsp; A/B calling
+
+--
+
+## &emsp; Data formats and storage
+
+--
+
+## &emsp; Batch effect (matrix level)
+
+
+
+
+
+---
+count: false
+class: inverse, center
+
+
+</br>
+
+</br>
+
+# 4DGenome Unit
+
+--
+
+</br>
+ 
+
+## It's about C technologies
+
+
+--
+
+</br>
+
+
+## Ask us
+
+--
+
+ 
+### (Before we leave)
+
+
+---
+
+# Original 4C: Paper
+
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/4c_original_splinter_paper.png")
+```
+]
+]
+
+---
+count: false
+
+# Original 4C: Protocol
+
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/4c_original_splinter_protocol.png")
+```
+]
+]
+
+---
+count: false
+
+# Original 4C: Method
+
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="60%"}
+knitr::include_graphics("images/4c_original_splinter_method.png")
+```
+]
+]
+
+
+---
+count: false
+
+# Original 4C: Pitfalls
+
+</br>
+
+</br>
+
+.center[
+```{r, echo=FALSE, out.width="90%"}
+knitr::include_graphics("images/4c_original_splinter_pitfalls.png")
+```
+]
+
+--
+
+</br>
+
+</br>
+
+.center[
+# `r fa("far fa-times-circle")` PCR duplicates
+]
+
+---
+class: inverse, center, middle
+count: false
+
+# UMI-4C
+
+
+---
+
+# UMI-4C: Paper
+
+.center[
+.theframe[
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/umi_4c_scwartzman_paper.png")
+```
+]
+]
+
+---
+count: false
+
+# UMI-4C: Protocol
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/umi_4c_scwarztman_protocol.png")
+```
+]
+
+
+---
+count: false
+
+# UMI-4C: Results
+
+</br>
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/umi_4c_scwartzman_results.png")
+```
+]
+
+--
+
+</br>
+
+.center[
+# `r fa("fas fa-user-times")` Software doesn't work
+]
+
+
+---
+class: inverse, center, middle
+count: false
+
+
+# We need to analyze
+
+---
+
+# Mimic Tanay method
+
+
+.center[
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/profile_domainogram.png")
+```
+]
+
+---
+
+# Bait detection
+
+.center[
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/detection.png")
+```
+]
+
+
+---
+
+# Raw profiles
+
+.center[
+```{r, echo=FALSE, out.width="70%"}
+knitr::include_graphics("images/profiles_overal.png")
+```
+]
+
+---
+class: inverse, center, middle
+count: false
+
+# Zoom in `r fa("fas fa-search", fill = "white")`
+
+
+---
+
+# Raw profile
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/sox1_raw_1.png")
+```
+]
+
+---
+
+# Tanay smoothing
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/sox1_tanay_1.png")
+```
+]
+
+---
+
+# Replicates &emsp; &emsp; &emsp; `r fa("far fa-smile")`
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/sox1_raw_12.png")
+```
+]
+
+---
+
+# Replicates + Tanay &emsp; `r fa("far fa-frown")`
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/sox1_tanay_12.png")
+```
+]
+
+---
+class: inverse, center, middle
+count: false
+
+# Can we improve it?
+---
+
+# Random walk smoothing
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/sox1_rw_12.png")
+```
+]
+
+---
+
+# GAM (splines)
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/sox1_gam_12.png")
+```
+]
+
+---
+
+# Random walk (only position) smoothing
+
+.center[
+```{r, echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/sox1_rw2_12.png")
+```
+]
+
+
+---
+class: inverse, center, middle
+count: false
+
+# What is the best?
+
+---
+
+# Benchmark
+
+--
+
+## &emsp; `r fa("far fa-times-circle")` NO gold standard
+
+--
+
+## &emsp; `r fa("far fa-hand-point-right")` Replicate vs. condition
+
+--
+
+## &emsp; `r fa("far fa-file-archive")` 3 data sets:
+
+--
+
+### &emsp; &emsp; &emsp; `r fa("fas fa-anchor")` &emsp; 10-16 baits
+
+### &emsp; &emsp; &emsp; `r fa("fas fa-street-view")` &emsp; 4-5 conditions
+
+### &emsp; &emsp; &emsp; `r fa("far fa-smile")`  &emsp; at least 2 replicates
+
+
+
+---
+class: inverse, center, middle
+count: false
+
+# Discrimination
+
+---
+
+# ROC curve
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/discrimination_roc.png")
+```
+]
+
+---
+
+# PR curve
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/discrimination_pr.png")
+```
+]
+
+---
+
+# AUC
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/discrimination_scatter.png")
+```
+]
+
+---
+class: inverse
+
+# Wrap-up
+
+--
+
+### &emsp; &emsp; `r fa("fas fa-thumbs-up", fill = "white")` Tanay better than nothing
+
+### &emsp; &emsp; `r fa("fas fa-thumbs-up", fill = "white")` There might be better alternatives
+
+--
+
+# Discussion
+
+--
+
+### &emsp; &emsp; `r fa("fas fa-question-circle", fill = "white")` Resolution
+
+### &emsp; &emsp; `r fa("fas fa-question-circle", fill = "white")` Over-smoothing
+
+### &emsp; &emsp; `r fa("fas fa-question-circle", fill = "white")` Quantitative
+
+---
+class: inverse, center, middle
+count: false
+
+
+---
+count: false
+
+# AUC OneD
+
+.center[
+```{r, echo=FALSE, out.width="75%"}
+knitr::include_graphics("images/discrimination_scatter_oned.png")
+```
+]
+
+---
+count: false
+
+# UMI-4C vs. Hi-C
+
+## Bench
+
+Similar costs (time & money)
+
+## Sequencing
+
+5,000X more contacts at same depth
+
+## Money
+
+- Hi-C &emsp; &emsp; &emsp; &emsp; ~ 5 € / fragment-contact
+- UMI-4C &emsp; ~ 0.001 € / fragment-contact
+

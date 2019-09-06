@@ -1,0 +1,113 @@
+
+# general outline
+
+Most of you already know what the 4DGenome project is about. Well, today I will
+talk about the role of the 4DGenome Unit. This is going to be like a showroom of
+the 4DGU. A small disclaimer: Views are my own, so the show might be
+biased (towards what I know best) and not completely linear.
+
+## intro
+
+## outcomes
+
+### data
+
+### methods
+
+### scientific production
+
+
+
+
+
+# Papers
+
+22 papers
+5 as first / corresponding
+
+
+## Main contributions (first author)
+
+### parallel sequiencing lives
+
+- managing
+
+### OneD
+
+- methods
+- reproducibility
+- aberrant karyotypes
+- incomplete designs
+
+### TF orchestrate
+
+- Permanent changes (Cell fate)
+- Data integration (expresion, chromatin marks)
+
+### hormone-control regions
+
+- Transient changes
+- InraTAD-tad contacts
+- Incomplete designs
+
+### Rapid reversible
+
+- Transient changes
+- InraTAD-tad contacts
+- Incomplete designs
+
+
+## Collaborations
+
+### Tian's
+
+"Whsc1 links pluripotency exit with mesen"
+
+- q4c
+
+### Yannick's
+
+"Binless normalization of Hi-C data provi"
+
+
+### Covadonga's
+
+"Three-Dimensional Genomic Structure and"
+
+
+### 
+
+"Specific Contributions of Cohesin-SA1 an"
+
+### Gloria's
+
+"Promoter bivalency favors an open chroma"
+
+
+## Ongoing
+
+### Greg's
+
+### Moritz's
+
+
+# Data production
+
+- Number of samples produced and processed
+
+# Management
+
+- Metadata
+- Automatization
+- Visualization (Hi-C and virtual 4C)
+
+
+# TO-DO
+
+## Consensus!
+
+## Batch effect
+
+## Data release
+
+

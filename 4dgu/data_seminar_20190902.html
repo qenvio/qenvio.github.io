@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4DGU</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Enrique Vidal @qenvio github.com/qenvio enrique.vidal@crg.eu" />
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+    <link href="libs/remark-css/hygge.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link rel="stylesheet" href="hola.css" type="text/css" />
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+
+
+
+
+
+
+
+count: false
+class: inverse, center, middle
+
+&lt;/br&gt;
+&lt;/br&gt;
+&lt;/br&gt;
+
+# .titan[4DGenome unit]
+
+## 02 / 09 / 2019
+
+&lt;/br&gt;
+
+### Enrique (Quique) Vidal&lt;/br&gt;&lt;i class="fa fa-envelope"&gt;&lt;/i&gt; enrique.vidal@crg.eu &lt;i class="fa fa-twitter"&gt;&lt;/i&gt; @qenvio &lt;i class="fa fa-github"&gt;&lt;/i&gt; qenvio
+
+---
+count: false
+class: inverse, center, middle
+
+# .gozilla[People]
+
+---
+
+# 4DGenome
+
+.pull-left[
+.center[
+.theframe[
+&lt;img src="images/M_Beato.jpg" width="90%" /&gt;
+]
+]
+.center[
+.theframe[
+&lt;img src="images/T_Graff.jpg" width="90%" /&gt;
+]
+]
+]
+
+.pull-right[
+.center[
+.theframe[
+&lt;img src="images/M_Marti.jpg" width="90%" /&gt;
+]
+]
+.center[
+.theframe[
+&lt;img src="images/G_Filion.jpg" width="90%" /&gt;
+]
+]
+]
+
+---
+count: false
+class: inverse, center, middle
+
+
+# .gozilla[whatever-C]
+
+
+---
+
+# Chromosome conformation capture
+
+**Dekker, J. et al. (2002)**&lt;/br&gt;
+*Capturing chromosome conformation*&lt;/br&gt;
+Science
+
+.center[
+&lt;img src="images/crosslink.jpg" width="90%" /&gt;
+]
+
+
+**Lieberman-Aiden, E. et al. (2009)**&lt;/br&gt;
+*Comprehensive mapping of long-range interactions reveals folding principles of
+the human genome*&lt;/br&gt;
+Science
+
+
+---
+
+# Hi-C Matrix: Step by step
+
+.center[
+&lt;img src="images/hic_animation_full.gif" width="60%" /&gt;
+]
+
+---
+
+# Territories, compartments, domains, loops
+
+.center[
+&lt;img src="images/hic.png" width="70%" /&gt;
+]
+
+
+---
+
+# Capture-C: Contact matrices
+
+.center[
+&lt;img src="images/chic_1.png" width="75%" /&gt;
+]
+
+---
+count: false
+
+# Capture-C: Contact matrices
+
+.center[
+&lt;img src="images/chic_2.png" width="75%" /&gt;
+]
+
+---
+
+# Capture-C: Contact profile
+
+.center[
+&lt;img src="images/virtual_1.png" width="75%" /&gt;
+]
+
+---
+count: false
+
+# Capture-C: Contact profile
+
+.center[
+&lt;img src="images/virtual_2.png" width="75%" /&gt;
+]
+
+
+---
+
+# 4C
+
+.center[
+&lt;img src="images/profile_domainogram.png" width="70%" /&gt;
+]
+
+
+
+
+---
+count: false
+class: inverse, center, middle
+
+# .gozilla[Data production]
+
+---
+
+# Samples produced and processed
+
+.center[
+&lt;img src="images/processed_samples.png" width="75%" /&gt;
+]
+
+
+---
+count: false
+class: inverse, center, middle
+
+# .gozilla[Challenges]
+
+---
+count: false
+class: inverse
+
+# Challenges
+
+--
+
+## &amp;emsp; 1. Sequencing overflow
+
+---
+
+# Sequencing overflow
+
+### Over 1,000 samples processed
+
+--
+## &amp;emsp; Metadata
+
+--
+## &amp;emsp; Automatization
+
+--
+## &amp;emsp; Cluster (storage and jobs)
+
+--
+## &amp;emsp; Exploration and visualization aids
+
+---
+
+# Parallel sequencing lives
+
+.center[
+.theframe[
+&lt;img src="images/parallel_1.png" width="100%" /&gt;
+]
+]
+
+---
+
+# Parallel sequencing lives
+
+
+.center[
+.theframe[
+&lt;img src="images/parallel_2.jpeg" width="90%" /&gt;
+]
+]
+
+
+---
+
+# HIsee: Metadata
+
+.center[
+.theframe[
+&lt;img src="images/metadata.gif" width="90%" /&gt;
+]
+]
+
+---
+
+# HIsee: Quality control
+
+.center[
+.theframe[
+&lt;img src="images/qc.gif" width="90%" /&gt;
+]
+]
+
+---
+
+# HIsee: Contact matrices
+
+.center[
+.theframe[
+&lt;img src="images/contacts.gif" width="90%" /&gt;
+]
+]
+
+---
+
+# HIsee: Whole chromosome
+
+.center[
+.theframe[
+&lt;img src="images/contacts_wholechr.gif" width="90%" /&gt;
+]
+]
+
+---
+
+# HIsee: Smoothing!
+
+.center[
+.theframe[
+&lt;img src="images/contacts_detail.gif" width="90%" /&gt;
+]
+]
+
+---
+
+# Virual 4C
+
+.center[
+.theframe[
+&lt;img src="images/virtual4c.gif" width="90%" /&gt;
+]
+]
+
+
+---
+count: false
+class: inverse
+
+# Challenges
+
+## &amp;emsp; 1. Sequencing overflow
+
+## &amp;emsp; 2. Reproducibility
+
+---
+
+# Reproducibility
+
+--
+
+## &amp;emsp; Biases
+
+--
+
+## &amp;emsp; Aberrant karyotypes
+
+--
+
+## &amp;emsp; Incomplete designs
+
+--
+
+## &amp;emsp; Computational resources
+
+
+
+---
+
+# Biases
+
+.center[
+&lt;img src="images/toy_signal.png" width="70%" /&gt;
+]
+
+---
+count: false
+
+# Biases
+
+.center[
+&lt;img src="images/toy_signal_and_bias.png" width="70%" /&gt;
+]
+
+---
+count: false
+
+# Biases
+
+.center[
+&lt;img src="images/toy_signal_and_bias_and_decay.png" width="70%" /&gt;
+]
+
+
+---
+count: false
+
+# Biases
+
+.center[
+&lt;img src="images/toy_simulated.png" width="70%" /&gt;
+]
+
+---
+
+# Aberrant karyotypes
+
+.center[
+&lt;img src="images/hic_copy-number_only-raw.png" width="70%" /&gt;
+]
+
+---
+
+# Inclomplete designs
+
+.center[
+&lt;img src="images/capture.png" width="70%" /&gt;
+]
+
+
+
+
+---
+
+# A model-based approach to bias removal
+
+.center[
+&lt;img src="images/hic_totals_filtered.png" width="60%" /&gt;
+]
+
+---
+count: false
+
+# A model-based approach to bias removal
+
+.center[
+&lt;img src="images/hic_totals_smooth_filtered.png" width="60%" /&gt;
+]
+
+---
+
+# A model-based approach to bias removal
+
+&lt;br&gt;
+
+.center[
+.theframe[
+&lt;img src="images/oned_1.png" width="90%" /&gt;
+]
+]
+
+&lt;/br&gt;
+.center[
+### &lt;i class="fa fa-github"&gt;&lt;/i&gt; qenvio/dryhic
+]
+
+---
+
+# OneD vs. the world
+
+.center[
+&lt;img src="images/benchmark_values_rocs_all.png" width="70%" /&gt;
+]
+
+
+---
+
+# OneD is thrifty
+
+--
+
+.pull-left[
+.center[
+&lt;img src="images/hic_totals_subsample_correlation_filtered.png" width="100%" /&gt;
+]
+]
+
+--
+
+.pull-right[
+.center[
+&lt;img src="images/hic_resolution_projection_filtered.png" width="100%" /&gt;
+]
+]
+
+
+---
+
+# OneD is fast
+
+.center[
+&lt;img src="images/reso_times.png" width="70%" /&gt;
+]
+
+
+---
+count: false
+class: inverse
+
+# Challenges
+
+## &amp;emsp; 1. Sequencing overflow
+
+## &amp;emsp; 2. Reproducibility
+
+## &amp;emsp; 3. Data &amp;#8594; Info &amp;#8594; Knowledge
+
+---
+
+# The inner life of TADs
+
+--
+.pull-left[
+.center[
+&lt;img src="images/intratad_cartoon.png" width="100%" /&gt;
+]
+]
+
+--
+.pull-right[
+.center[
+&lt;img src="images/intratad_raw_onebatch.png" width="100%" /&gt;
+]
+]
+
+---
+
+# The inner life of TADs
+
+.pull-left[
+.center[
+&lt;img src="images/intratad_cartoon.png" width="100%" /&gt;
+]
+]
+
+.pull-right[
+.center[
+&lt;img src="images/intratad_linearmodel_onebatch.png" width="100%" /&gt;
+]
+]
+
+---
+
+# The inner life of TADs
+
+.pull-left[
+.center[
+&lt;img src="images/intratad_cartoon.png" width="100%" /&gt;
+]
+]
+
+.pull-right[
+.center[
+&lt;img src="images/intratad_linearmodel_foldchange_onebatch.png" width="100%" /&gt;
+]
+]
+
+
+---
+
+# Hormone-control regions
+
+.center[
+.theframe[
+&lt;img src="images/hormone_2.png" width="100%" /&gt;
+]
+]
+
+---
+
+# Hormone-control regions
+
+.center[
+.theframe[
+&lt;img src="images/hormone_1.png" width="70%" /&gt;
+]
+]
+
+---
+
+# 3D genome and gene regulation
+
+.center[
+.theframe[
+&lt;img src="images/tf_2.png" width="70%" /&gt;
+]
+]
+
+---
+
+# 3D genome and gene regulation
+
+.center[
+.theframe[
+&lt;img src="images/tf_1.png" width="100%" /&gt;
+]
+]
+
+
+
+---
+count: false
+class: inverse
+
+# Challenges
+
+## &amp;emsp; 1. Sequencing overflow
+
+## &amp;emsp; 2. Reproducibility
+
+## &amp;emsp; 3. Data &amp;#8594; Info &amp;#8594; Knowledge
+
+## &amp;emsp; 4. Be in the middle
+
+
+---
+
+# Collaborations and scientific production
+
+
+.center[
+&lt;img src="images/papers.png" width="70%" /&gt;
+]
+
+
+
+---
+count: false
+class: inverse, center, middle
+
+# .gozilla[To-Do]
+
+---
+
+# Consensus
+
+--
+
+## &amp;emsp; Quality control
+
+--
+
+## &amp;emsp; Data formats and storage
+
+--
+
+## &amp;emsp; Callers (A/B, TAD, loop ...)
+
+
+---
+
+# So ...
+
+&lt;br&gt;
+
+&lt;center&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;A DNA sequencer is a machine that automates the generation of batch effects.&lt;/p&gt;&amp;mdash; Lior Pachter (@lpachter) &lt;a href="https://twitter.com/lpachter/status/1161934792335560704?ref_src=twsrc%5Etfw"&gt;August 15, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+
+---
+count: false 
+
+# So ... do we have batch effect? ...
+
+&lt;br&gt;
+
+&lt;center&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;A DNA sequencer is a machine that automates the generation of batch effects.&lt;/p&gt;&amp;mdash; Lior Pachter (@lpachter) &lt;a href="https://twitter.com/lpachter/status/1161934792335560704?ref_src=twsrc%5Etfw"&gt;August 15, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+
+---
+
+# So ... do we have batch effect? ... Of course
+
+
+.center[
+&lt;img src="images/intratad_batch_pca_raw.png" width="60%" /&gt;
+]
+
+---
+count: false
+
+# OK ... Can we fix it?
+
+.center[
+&lt;img src="images/intratad_batch_pca_raw.png" width="60%" /&gt;
+]
+
+---
+
+# OK ... Can we fix it? ... It depends
+
+
+.center[
+&lt;img src="images/intratad_batch_pca_batch.png" width="60%" /&gt;
+]
+
+---
+
+# Data release
+
+--
+
+&lt;br&gt;
+
+## Do you remember we have generated +500 samples?
+
+--
+
+&lt;br&gt;
+
+## Well ... now we have to make them public
+
+
+
+---
+class: inverse, center
+
+
+
+# .titan[4DGenome unit]
+
+--
+
+&lt;/br&gt;
+ 
+
+# It's about C technologies
+
+
+--
+
+&lt;/br&gt;
+
+
+# Ask us
+
+--
+
+ 
+## (Before we leave)
+
+
+---
+count: false
+
+# ROC and AUC normal karyotypes
+
+.center[
+&lt;img src="images/benchmark_values_rocs_normals.png" width="70%" /&gt;
+]
+
+---
+count: false
+
+# PRC and AUC
+
+.center[
+&lt;img src="images/benchmark_values_prcs_all.png" width="70%" /&gt;
+]
+    </textarea>
+<script src="libs/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"self_contained": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function() {
+  var d = document, s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})();</script>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+  }
+});
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://cdn.bootcss.com/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
