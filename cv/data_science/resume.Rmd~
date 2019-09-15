@@ -1,0 +1,201 @@
+---
+title: "qenvio's resume"
+author: Enrique (Quique) Vidal
+output: pagedown::html_resume
+---
+
+Aside
+====================================
+
+Picture, etc.
+
+Contact info
+------------------------------------
+
+Email, phone number, ...
+
+Skills
+------------------------------------
+
+- One
+- Two
+- Three
+
+Disclaimer
+------------------------------------
+
+A footer in the sidebar.
+
+
+Main
+====================================
+
+Enrique (Quique) Vidal {#title}
+------------------------------------
+
+From physics and statistics to bioinformatics and genomics through
+epidemiology. Data scientist helping to ask and answer questions
+quantitatively. R'ing all the way from data processing to modeling and
+visualizing. Non-stop-learner.
+
+Education {data-icon=graduation-cap}
+------------------------------------
+
+### Universidad Autónoma de Madrid
+
+PhD. in Epidemiology
+
+Madrid, Spain
+
+2011
+
+*Anisotropic models to study cancer mortality around poullutant sources*
+
+### Universitat de València
+
+Degree in Statistics
+
+Valencia, Spain
+
+2006
+
+### Universitat de València
+
+Degree in Physics
+
+Valencia, Spain
+
+2005
+
+Research Experience {data-icon=laptop}
+------------------------------------
+
+### Postdoctoral Researcher
+
+Center for Genomic Regulation (CRG)
+
+Barcelona, Spain
+
+Now - 2015
+
+Acting as head of computational biology for the 4DGenome Unit
+
+### Postdoctoral Researcher
+
+Bellvitge Biomedical Research Institute (IDIBELL)
+
+Barcelona, Spain
+
+2015 - 2012
+
+Hola hola
+
+### Postdoctoral Researcher
+
+Principe Felipe Research Center (CIPF)
+
+Valencia, Spain
+
+2012 - 2011
+
+Hola hola
+
+### Bioinformatician / Biostatistician
+
+Principe Felipe Research Center (CIPF)
+
+Valencia, Spain
+
+2011 - 2009
+
+Hola hola
+
+
+### Biostatistician
+
+National Center for Epidemiology
+
+Madrid, Spain
+
+2009 - 2006
+
+Hola hola
+
+Teaching Experience {data-icon=chalkboard-teacher}
+------------------------------------
+
+### Biostatistics
+
+Instructor (Medical School), Universitat Jaume I
+
+Castellón, Spain
+
+2017 - 2016
+
+
+### Epidemiology and Public Health
+
+Instructor (Medical School), Universitat Jaume I
+
+Castellón, Spain
+
+2017 - 2016
+
+
+### Basic Epidemiology
+
+Coordinator and instructor, Escuela Valenciana de Estudios de la Salud (EVES)
+
+Valencia, Spain
+
+2011
+
+
+### Epidemiology,
+
+Instructor (M.S. Public Health), Escuela Nacional de Sanidad (ISCIII)
+
+Madrid, Spain
+
+2009
+
+### Statistical analysis with R (2nd edition)
+
+Coordinator and Instructor, ISCIII
+
+Madrid, Spain
+
+2009
+
+
+### Biostatistics
+
+Instructor (M.S. Public Health), Escuela Nacional de Sanidad (ISCIII)
+
+Madrid, Spain
+
+2008
+
+### Statistical analysis with R
+
+Coordinator and Instructor, ISCIII
+
+Madrid, Spain
+
+2008
+
+
+Consulting Experience {data-icon=briefcase}
+------------------------------------
+
+### Statistics and bioinformatics
+
+Ferrer Corporate
+
+Barcelona, Spain
+
+2019
+
+-Multiclass classifier for tumor origin prediction
+
+-Workflow implementation for mutation detection

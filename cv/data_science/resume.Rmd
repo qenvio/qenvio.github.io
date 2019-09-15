@@ -1,0 +1,350 @@
+---
+title: "qenvio's resume"
+author: Enrique (Quique) Vidal
+output: pagedown::html_resume
+---
+
+Aside
+====================================
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> qenvio@gmail.com
+- <i class="fa fa-github"></i> [github.com/qenvio](https://github.com/qenvio)
+
+
+Skills
+------------------------------------
+
+- R
+- Bash
+- SQL
+- Python
+
+Disclaimer
+------------------------------------
+
+Last updated on `r Sys.Date()`.
+
+
+Main
+====================================
+
+Enrique (Quique) Vidal {#title}
+------------------------------------
+
+From physics and statistics to bioinformatics and genomics through
+epidemiology. Data scientist helping to ask and answer questions
+quantitatively. R'ing all the way from data processing to modeling and
+visualizing. Non-stop-learner.
+
+Education {data-icon=graduation-cap}
+------------------------------------
+
+### Universidad Autónoma de Madrid
+
+PhD. in Epidemiology
+
+Madrid, Spain
+
+2011
+
+*Anisotropic models to study cancer mortality around poullutant sources*
+
+
+::: aside
+
+Thesis [text](https://qenvio.github.io/madrid/tesis_text.pdf)
+and [slides](https://qenvio.github.io/madrid/tesis_slides.pdf) (in Spanish)
+
+:::
+
+### Universitat de València
+
+Degree in Statistics
+
+Valencia, Spain
+
+2006
+
+### Universitat de València
+
+Degree in Physics
+
+Valencia, Spain
+
+2005
+
+
+Consulting Experience {data-icon=briefcase}
+------------------------------------
+
+### Statistics and bioinformatics
+
+Ferrer Corporate
+
+Barcelona, Spain
+
+2019
+
+::: concise
+
+- Multiclass classifier for prediction of tumor origin
+- Implementation of a workflow for mutation detection
+
+:::
+
+
+Research Experience {data-icon=laptop}
+------------------------------------
+
+### Postdoctoral Researcher
+
+Center for Genomic Regulation (CRG)
+
+Barcelona, Spain
+
+Now - 2015
+
+::: concise
+
+Acting as head of computational biology for the 4DGenome Unit:
+
+- Implemented a reproducible workflow for genome structure samples
+- Developed a bias-correction method for genome structure data
+- Visualization tools based on shiny
+- Context-specific analysis for the study of the dynamics of genome structure
+
+:::
+
+::: aside
+
+### [dryhic](https://github.com/qenvio/dryhic) R package
+
+for genome structure data. It includes [OneD](https://doi.org/10.1093/nar/gky064) bias correction method using GAMs
+
+:::
+
+### Postdoctoral Researcher
+
+Bellvitge Biomedical Research Institute (IDIBELL)
+
+Barcelona, Spain
+
+2015 - 2012
+
+- Integrative analysis of epigenomic data
+
+### Postdoctoral Researcher
+
+Principe Felipe Research Center (CIPF)
+
+Valencia, Spain
+
+2012 - 2011
+
+- Implementation of the platform to analyze exomes for rare diseases (CIBERER-BIER)
+
+### Bioinformatician / Biostatistician
+
+Principe Felipe Research Center (CIPF)
+
+Valencia, Spain
+
+2011 - 2009
+
+- Network analysis and multilevel modeling in the context of signaling pathways
+
+
+### Biostatistician
+
+National Center for Epidemiology
+
+Madrid, Spain
+
+2009 - 2006
+
+::: concise
+
+- Analysis of mortality time-trends
+- Disease mapping (spatio-temporal smoothing)
+- Assement of risk factors associated with pollution
+
+:::
+
+Teaching Experience {data-icon=chalkboard-teacher}
+------------------------------------
+
+### Biostatistics, Epidemiology and Public Health
+
+Instructor
+
+Castellón, Spain
+
+2017 - 2016
+
+Universitat Jaume I
+
+::: aside
+
+Medical degree
+
+:::
+
+### Basic Epidemiology
+
+Coordinator and instructor
+
+Valencia, Spain
+
+2011
+
+Valencian School for Health Studies (EVES)
+
+::: aside
+
+Professional training
+
+:::
+
+
+
+### Biostatistcis and Epidemiology
+
+Instructor
+
+Madrid, Spain
+
+2009 - 2008
+
+National School of Public Health, ISCIII
+
+::: aside
+
+M.S. Public Health
+
+:::
+
+
+### Statistical analysis with R (2 editions)
+
+Coordinator and Instructor
+
+Madrid, Spain
+
+2009 - 2008
+
+Carlos III Institute of Health (ISCIII)
+
+::: aside
+
+Professional training
+
+:::
+
+
+Selected talks {data-icon=comments}
+------------------------------------
+
+### Simple statistical models for complex 3D genome data
+
+Statistical Methods for Post Genomic Data
+
+Barcelona, Spain
+
+2019
+
+::: aside
+
+[Slides](https://qenvio.github.io/barcelona/barcelona_20190131.html)
+
+:::
+
+### OneD: increasing reproducibility of Hi-C samples with abnormal karyotypes
+
+Keystone Symposia: Chromatin Architecture and Chromosome Organization; ISCB Next Generation Sequencing Conference
+
+Whistler, British Columbia, Canada
+
+2019
+
+Awarded with **"Outstanding presentation prize"**
+
+::: aside
+
+[Poster](https://qenvio.github.io/whistler/poster.pdf)
+
+:::
+
+
+### Segmented Poisson models
+
+The R User Conference
+
+Dortmund, Germany
+
+2008
+
+::: aside
+
+[Slides](https://qenvio.github.io/dortmund/segmented.pdf)
+
+:::
+
+Selected publications {data-icon=newspaper}
+------------------------------------
+
+::: aside
+
+Full list of publications accesible [here](https://orcid.org/0000-0002-4217-1807)
+
+:::
+
+First author publications in peer-reviewed journals
+
+### Hormone-control regions mediate steroid receptor–dependent genome organization
+
+[doi.org/10.1101/gr.243824.118](https://doi.org/10.1101/gr.243824.118)
+
+Genome Research
+
+2019
+
+
+### Transcription factors orchestrate dynamic interplay between genome topology and gene regulation during cell reprogramming
+
+[doi.org/10.1038/s41588-017-0030-7](https://doi.org/10.1038/s41588-017-0030-7)
+
+Nature Genetics
+
+2018
+
+
+### OneD: increasing reproducibility of Hi-C samples with abnormal karyotypes
+
+[doi.org/10.1093/nar/gky064](https://doi.org/10.1093/nar/gky064)
+
+Nucleic Acids Research
+
+2018
+
+
+### Copy number rather than epigenetic alterations are the major dictator of imprinted methylation in tumors
+
+[doi.org/10.1038/s41467-017-00639-9](https://doi.org/10.1038/s41467-017-00639-9)
+
+Nature Communications
+
+2017
+
+
+### A DNA methylation map of human cancer at single base-pair resolution
+
+[doi.org/10.1038/onc.2017.176](https://doi.org/10.1038/onc.2017.176)
+
+Oncogene
+
+2017
+
+
