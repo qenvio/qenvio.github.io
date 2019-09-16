@@ -38,7 +38,8 @@ From physics and statistics to bioinformatics and genomics through
 epidemiology. Data scientist helping to ask and answer questions
 quantitatively. R'ing all the way from data processing to modeling and
 visualizing. Non-stop-learner.
-
+ 
+ 
 Education {data-icon=graduation-cap}
 ------------------------------------
 
